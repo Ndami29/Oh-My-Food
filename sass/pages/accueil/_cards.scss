@@ -1,0 +1,79 @@
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px;
+    background-color: #F7F7F7;
+    @media screen and (min-width: 768px){
+        padding: 30px 10%;
+    }
+    .title{
+        font-weight: bold;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .cards_double{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+        .card-restaurant{
+            height: 250px;
+            width: 100%;
+            @include shadow;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            .blocImage{
+                height: 70%;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px 20px 0px 0px;
+                    object-fit: cover;
+                }
+                p{
+                    background: #99E2D0;
+                    width: 80px;
+                    height: 20px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 2px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    text-align: center;
+                   
+                }
+            }
+            .card-content{
+                height: 30%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+                .card-content-text{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    h3{}
+                    p{
+                       
+                    }
+                }
+                .card-content-like{
+                   @include heart;
+                }
+            }
+        }
+    }
+    }
+        
+        
+}

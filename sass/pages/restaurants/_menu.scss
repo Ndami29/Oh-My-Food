@@ -1,0 +1,136 @@
+.menu{
+    width: 100%;
+    background: #F7F7F7;
+    padding: 30px 0px ;
+    display : flex;
+    flex-direction: column;
+    gap : 30px;
+    @media screen and (min-width: 768px){
+        width: 80%;
+        margin: 0 10%;
+     }
+    
+    .menu-cards{
+        display : flex;
+        flex-direction: column;
+        gap : 10px;
+        padding : 0px 10%;
+        .titleMenu{
+            display : flex;
+            flex-direction: column;
+            gap : 5px;
+       
+            h3{
+                font-weight: lighter;
+            }
+            .underline{
+                height: 3px;
+                width: 40px;
+                background-color: #99E2D0;
+            }
+        }
+        
+        .cards{
+            display : flex;
+            flex-direction: column;
+            gap : 10px;
+        
+            .card-menu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: white;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+                height: 70px;
+                overflow: hidden;
+                animation: loadList 1s both;
+                &:nth-child(2){
+                    animation-delay: 0.2s;
+                }
+                &:nth-child(3){
+                    animation-delay: 0.4s;
+                }
+                &:nth-child(4){
+                    animation-delay: 0.6s;
+                }
+                &:nth-child(5){
+                    animation-delay: 0.8s;
+                }
+                .card-content-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    width: auto;
+                    flex: 1;
+                    height: 100%;
+                    margin-left: 20px;   
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    h4{
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    p{
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+                .card-content-price{
+                    display: flex;
+                    align-items: end;
+                    justify-content: end;
+                    height: 100%;
+                    width: 70px;
+                    margin-right: 20px;
+                    p{
+                        color: #353535;
+                        font-weight: bold;
+                    }
+                }
+                .card-content-checker{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 70px;
+                    height: 100%;
+                    background-color: #99E2D0;
+                    border-radius: 0 15px 15px 0;
+                    margin-right: -70px;
+                    transition-duration: 0.6s;
+                    i{
+                        color: white;
+                    }
+                }
+                &:hover > .card-content-checker{
+                    margin-right: 0px;
+                    transition: all 0.5s 0.5s;
+                }
+            }
+        }
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button-command{
+            @include button-pink;   
+        }
+    }
+    
+}
+
+@keyframes loadList {
+    0%{
+        opacity: 0;
+        transform: translateY(75%) ;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%) ;
+    }
+}

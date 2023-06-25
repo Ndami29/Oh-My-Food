@@ -1,0 +1,30 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    
+    .arrowLeft{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 20px;
+        }
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        img{
+            height: 40px;
+        }
+        
+    }
+    }
+
+
+

@@ -1,0 +1,28 @@
+
+/**********Main Container**********/
+
+body{
+    margin: 0px;
+    font-family: $font-family-Roboto;
+    .main-container{
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0px;
+}
+

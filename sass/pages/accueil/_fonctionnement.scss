@@ -1,0 +1,70 @@
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+    @media screen and (min-width: 768px){
+        padding: 0 10%;
+    }
+    .title{
+        font-weight: bold;
+       
+    }
+    .etapes{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+        }
+        .card-etape{
+           background: #F7F7F7;
+           @include shadow;
+            border-radius: 20px;
+            height: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            @media screen and (min-width: 768px){
+                padding-right: 50px;
+            }
+            .numero{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: #9356DC;
+                color: #FFFFFF;
+                font-weight: bold;
+                margin-left : -15px;
+                
+            }
+            i{
+                color: #7E7E7E;      
+            }
+            .fa-store{
+                color: #9356DC;
+            }
+            p{
+                font-weight: bold;
+            }
+        }
+    }
+}
+                
+                
+                    
+                        
+                         
+
+
+
+
+
+
+
+

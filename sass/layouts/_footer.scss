@@ -1,0 +1,60 @@
+
+
+/**********Footer**********/
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #353535;
+    padding: 20px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+        padding-top: 5%;
+        align-items: center;
+        gap: 5%;
+    }
+    .text_logo{
+        color: white;
+        font-family: $font-family-Shrikhand;
+        font-size: 16px;
+    }
+    .footerLinks{
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        .iLink{
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                font-weight: bold;
+            }
+        }
+        .simpleLink{
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+        }
+        .footerLink{
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-size: 12px;
+            i{ font-weight: 900;
+            }
+            p{}
+        }
+    
+    }
+    
+}
+
+
+
+

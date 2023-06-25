@@ -1,0 +1,41 @@
+.entete {
+    position: relative;
+    
+    img {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+        @media screen and (min-width: 768px){
+           height: 400px;
+        }
+    }
+    .restaurant {
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        padding: 0 10%;
+        background-color: #F7F7F7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 80px;
+        border-radius: 25px 25px 0 0;
+        @media screen and (min-width: 768px){
+           padding: 0 0;
+            margin: 0 10%;
+            justify-content: center;
+            gap: 20px;
+         }
+        h1 {
+            font-family: Shrikhand;
+            
+        }
+
+        .like {
+            
+            @include heart;
+        }
+    }
+
+}

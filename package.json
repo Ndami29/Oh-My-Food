@@ -1,0 +1,14 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "Maquettes mobile, tablette et desktop du site \"ohmyfood\".",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/accueil.scss:./css/accueil.css ./sass/restaurant.scss:./css/restaurant.css"
+  },
+  "author": "Nadjima",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

@@ -2,10 +2,10 @@
 /**********Main Container**********/
 
 body{
-    margin: 0px;
     font-family: $font-family-Roboto;
     .main-container{
-        max-width: 1400px;
+        margin: auto;
+        max-width: unset;
         display: flex;
         flex-direction: column;
         gap: 10px;

@@ -13,11 +13,11 @@
 }
 /**********Main Container**********/
 body {
-  margin: 0px;
   font-family: "Roboto";
 }
 body .main-container {
-  max-width: 1400px;
+  margin: auto;
+  max-width: unset;
   display: flex;
   flex-direction: column;
   gap: 10px;

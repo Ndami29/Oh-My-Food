@@ -258,7 +258,6 @@ main {
 .menu .menu-cards .cards .card-menu .card-content-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-evenly;
   width: auto;
   flex: 1;
